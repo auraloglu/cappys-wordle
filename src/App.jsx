@@ -39,10 +39,7 @@ const App = () => {
       wordList[currentRow][currentLetter].letter = letter;
       setCurrentLetter(currentLetter + 1);
     } else if (letter === "DEL" && currentLetter >= 0) {
-      wordList[currentRow][currentLetter] = {
-        letter: "",
-        status: 0,
-      };
+      wordList[currentRow][currentLetter - 1].letter = "";
       setCurrentLetter(currentLetter - 1);
     } else if (currentLetter === 5 && letter === "ENTER") {
       handleSubmit();

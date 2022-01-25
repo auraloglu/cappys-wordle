@@ -32,6 +32,8 @@
   font-weight: bold;
 
   border: 2px solid #3a3a3c;
+
+  transition: all 0.2s;
 }
 
 .wordle-letter-1 {
