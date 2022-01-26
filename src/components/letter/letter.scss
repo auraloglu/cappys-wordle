@@ -1,0 +1,35 @@
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  margin: 3px;
+
+  color: #d7dadc;
+  font-size: 32px;
+  font-weight: bold;
+
+  border: 2px solid var(--letter-neutral-color);
+
+  transition: all 0.2s;
+
+  &.letter-0 {
+    background-color: transparent;
+  }
+
+  &.letter-1 {
+    background-color: var(--letter-neutral-color);
+    border-color: var(--letter-neutral-color);
+  }
+
+  &.letter-2 {
+    background-color: var(--letter-warning-color);
+    border-color: var(--letter-warning-color);
+  }
+
+  &.letter-3 {
+    background-color: var(--letter-success-color);
+    border-color: var(--letter-success-color);
+  }
+}

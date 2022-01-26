@@ -1,8 +1,25 @@
 body {
   margin: 0;
+
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
+}
+
+:root {
+  --page-bg: #121213;
+
+  --letter-text: #d7dadc;
+  --letter-neutral-color: #3a3a3c;
+  --letter-warning-color: #b59f3b;
+  --letter-success-color: #538d4e;
+
+  --keyboard-letter-text: #d7dadc;
+  --keyboard-letter-neutral-bg: #818384;
+  --keyboard-letter-not-exist-bg: #3a3a3c;
+  --keyboard-letter-exist-bg: #b59f3b;
+  --keyboard-letter-success-bg: #538d4e;
 }

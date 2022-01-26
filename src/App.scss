@@ -1,0 +1,16 @@
+.cappys-wordle-game {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--page-bg);
+
+  .answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    color: var(--letter-success-color);
+    font-size: 32px;
+  }
+}

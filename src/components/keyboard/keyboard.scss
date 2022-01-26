@@ -1,0 +1,51 @@
+.keyboard {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .keyboard-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+
+    .keyboard-letter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 43px;
+      height: 58px;
+      margin: 0 6px 0 0;
+
+      font-size: 12px;
+      color: var(--keyboard-letter-text);
+
+      background-color: var(--keyboard-letter-neutral-bg);
+
+      border-radius: 4px;
+
+      cursor: pointer;
+
+      &.wrong-letter {
+        background-color: var(--keyboard-letter-not-exist-bg);
+      }
+
+      &.correct-letter {
+        background-color: var(--keyboard-letter-exist-bg);
+      }
+
+      &.correct-place-and-letter {
+        background-color: var(--keyboard-letter-success-bg);
+      }
+
+      &.keyboard-letter-ENTER,
+      &.keyboard-letter-DELETE {
+        width: 65px;
+      }
+    }
+  }
+}
